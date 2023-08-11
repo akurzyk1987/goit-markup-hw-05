@@ -25,11 +25,17 @@
         <nav class="navigation">
           <a class="logo top" href="./index.html"><span class="logo-web">WEB</span>STUDIO</a>
           <ul class="menu-list">
-            <li class="menu-list-item"><a class="menu-item" href="./index.html">Studio</a></li>
+            <li class="menu-list-item">
+              <a class="menu-item studio" href="./index.html"
+                ><span class="underline">Studio</span></a
+              >
+            </li>
             <li class="menu-list-item">
               <a class="menu-item" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="menu-list-item"><a class="menu-item" href="#">Contacts</a></li>
+            <li class="menu-list-item">
+              <a class="menu-item contacts" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address>
@@ -49,7 +55,16 @@
         <div class="container">
           <h1 class="heading-title">Effective Solutions for Your Business</h1>
 
-          <button class="order-button" type="button">Order Service</button>
+          <button class="order-button" data-modal-open type="button">Order Service</button>
+          <div class="modal is-hidden" data-modal>
+            <div class="popup">
+              <button class="btn-close" data-modal-close type="button">
+                <svg class="close">
+                  <use href="./images/close.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="brand-description section">
@@ -415,5 +430,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
